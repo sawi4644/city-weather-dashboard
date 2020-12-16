@@ -1,6 +1,23 @@
 .header{
+    background-image: url("./images/sky.jpg");
+    padding: 30px;
     text-align: center;
-    color: lightblue;
-    background-color:yellow; 
-    padding: 20px;
+    
 }
+.row{
+    margin: 20px;
+}
+
+.centered {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-top: 40px;
+    transform: translate(-50%, -50%);
+  }
+
+/* Centered text
+
+  #intro-image{
+      width:50% ;
+  } */
