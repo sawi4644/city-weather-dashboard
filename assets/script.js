@@ -1,5 +1,26 @@
 // instructions 
-// GIVEN a weather dashboard with form inputs
+// Get an API Key from OpenWeatherMap API
+var apiKey ="1ea2723652fb48157c3662902e2f935d"
+var queryURL = 'api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}' + apiKey + '&units=imperial'
+
+console.log(queryURL)
+
+ // Create an AJAX call to retrieve data Log the data in console
+ $.ajax({
+   url: queryURL,
+   method: 'GET'
+ }).then(function(weatherData){
+   $('.city').text("City: " + weatherData.name)
+   $('.wind').text("wind speed: " + weatherData.wind.speed)
+   $('.humidity').text("humidity: " + weatherData.main.humidity)
+   $('.temp').text("temperature: " + weatherData.main.temp)
+ })
+
+
+ function k2f(K) {
+    return Math.floor((K - 273.15) *1.8 +32);
+}
+ // Log the data in HTML
 // WHEN I search for a city
 // THEN I am presented with current and future conditions for that city and that city is added to the search history
 // WHEN I view current weather conditions for that city
