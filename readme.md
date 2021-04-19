@@ -19,3 +19,4 @@ HTML, CSS, Javascript, Jquery, and 3rd party API's.
 The following image demonstrates the application functionality:
 
 ![demo1](./assets/images/dash.png)
+![demo2](./assets/images/dash2.png)
