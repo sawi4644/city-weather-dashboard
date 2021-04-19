@@ -18,4 +18,5 @@ HTML, CSS, Javascript, Jquery, and 3rd party API's.
 # Deployed Site
 The following image demonstrates the application functionality:
 
-![weather dashboard demo](./Assets/06-server-side-apis-homework-demo.png)
+![demo1](./assets/images/dash.png)
+![demo2](./assets/images/dash2.png)
