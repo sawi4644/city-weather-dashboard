@@ -109,16 +109,8 @@ function forecast(cityid){
     });
 }
 
-// makes last search list useful
-function getPastSearch(event){
-    var target=event.target;
-    if (event.target.matches("li")){
-        city=target.textContent.trim();
-        presentWeather(city);
-    }
-}
 
-// clear search list and local storage
+
 function clearHistory(event){
     event.preventDefault();
     city=""
